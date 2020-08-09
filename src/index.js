@@ -1,5 +1,5 @@
-import theAnswer from './theAnswer';
-
 {
-    console.log(`Answer to The Ultimate Question of Life, the Universe, and Everything is ${theAnswer}`);
+    const getString = () => `Answer to The Ultimate Question of Life, the Universe, and Everything is ${42}`;
+
+    window.getString = getString;
 }

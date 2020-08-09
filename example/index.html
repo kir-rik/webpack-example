@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <strong id="strong"></strong>
+        <script src="../src/index.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function (event) {
+                const strong = document.getElementById("strong");
+
+                strong.innerHTML = window.getString()
+            })
+        </script>
+    </body>
+</html>

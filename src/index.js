@@ -1,5 +1,7 @@
+import theAnswer from './theAnswer';
+
 {
-    const getString = () => `Answer to The Ultimate Question of Life, the Universe, and Everything is ${42}`;
+    const getString = () => `The Answer to The Ultimate Question of Life, the Universe, and Everything is ${theAnswer}`;
 
     window.getString = getString;
 }

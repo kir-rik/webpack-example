@@ -13,4 +13,20 @@ module.exports = {
         modules: [path.resolve(__dirname, 'src')],
         extensions: ['.js']
     },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node-modules/,
+                use: [{
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            '@babel/preset-env'
+                        ]
+                    }
+                }]
+            }
+        ],
+    },
 }

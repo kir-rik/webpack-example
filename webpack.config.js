@@ -2,6 +2,7 @@
 const path = require('path')
 
 module.exports = {
+    watch: true,
     context: path.resolve(__dirname, 'src'),
     entry: './index.js',
     devtool: 'inline-source-map',
